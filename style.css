@@ -6,9 +6,11 @@
 body{
     background-color: #000;
 }
-html{ scroll-behavior:smooth; }
+html{ 
+	scroll-behavior:smooth; 
+}
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
     background: #c0c0c0; 
@@ -143,10 +145,10 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
-	/*************************
-	*************************/
 }
 /****************** End of navigation bar *************************/
+/**************************************************/
+/************************ Home Page **************************/
 .home{
     padding: 0 20px;
     background-color: #000;
@@ -175,10 +177,25 @@ nav .icon-burger .line {
 .color-green{
 	color: #20b2aa;
 }
+.cover-article{
+	width: 100%;
+	height: 20vh;
+	text-align: center;
+}
+.paragraph-content{
+	text-align: center;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#seagreen{
+	color: #1fb2aa;
+}
+.more-images{
+	width: 180px;
+}
 
-/*******************************************/
-
-/*WEATHER*/
+/*****************WEATHER**************************/
 
 .container-fluid{
  width: 420px;
@@ -186,15 +203,11 @@ nav .icon-burger .line {
  padding: 80px 0;
 
 }
-
-
 .inputs {
     padding: 2rem 0 2rem 0;
     text-align: center;
     justify-content: center;
-
 }
-
 .inputs input[type="text"] {
     height: 3.5rem;
     width: 20rem;
@@ -219,7 +232,6 @@ nav .icon-burger .line {
     border: none;
     border-radius: 2px;
 }
-
 /* -------------------------------display */
 .display {
     text-align: center;
@@ -347,7 +359,7 @@ border: none;
 /*******************************************/
 /*******************************************/
 
-/*contact.html styling*/
+/***********contact page*************/
 
 input{
     padding: 10px;
@@ -406,7 +418,7 @@ button:hover{
     padding: 20px;
 }
 .deets .fa{
-    background-color: #20b2ab80;
+    /* background-color: #20b2ab80; */
     color: #fff;
     background-size: cover;
     padding: 30px;
@@ -416,9 +428,10 @@ button:hover{
 .deets a{
     text-decoration: none;
     color: rgba(128, 128, 128, 0.952);
+	transition: .5s;
 }
 .deets a:hover{
-    color: rgba(0, 0, 255, 0.582);
+    color: #fff;
 }
 @media (max-width: 880px) {
 	.contacts-container{
@@ -449,19 +462,24 @@ button:hover{
 }
 
 /*******************************************/
-/*******************************************/
+/****************** About Page *************************/
 
 .table-details{
 	color: #fff; 
 	padding: 0 ; 
 	margin: 200px auto;
 }
+.table-details li{
+	list-style: none;
+}
 .table-details td{
 	padding: 0 15px;
 	margin: 20px;
+	text-transform: capitalize;
 }
 .green-color{
 	color: #20b2aa;
+	border-bottom: 2px solid #20b2ab41;
 }
 @media (max-width: 880px) {
 	.information-about-me{
@@ -483,73 +501,58 @@ button:hover{
 /*******************************************/
 /*******************************************/
 /*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
+/******************* footer ************************/
 .footer-distributed{
 	background: #000;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
 }
-
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
-
 /* Footer left */
-
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
 	margin: 0;
 }
-
 .footer-distributed h3 span{
-	color:  lightseagreen;
+	color:  #1fb2aa;
 }
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
-
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  font-weight:400;
+  	font-weight:400;
 	text-decoration: none;
 	color:  inherit;
+	transition: .5s;
 }
-
+.footer-links a:hover{
+	color: #1fb2aa;
+}
 .footer-distributed .footer-company-name{
 	color:  #222;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center{
 	width: 35%;
 }
-
 .footer-distributed .footer-center i{
 	background-color:  #000;
 	color: #20b2aa;
@@ -562,32 +565,27 @@ button:hover{
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
-
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
-  font-weight:400;
+  	font-weight:400;
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
-
 .footer-distributed .footer-center p a{
 	color:  #20b2aa;
 	text-decoration: none;;
 }
-
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight:300;
@@ -597,17 +595,13 @@ button:hover{
   display: inline-block;
   padding-right: 5px;
 }
-
 .footer-distributed .footer-links .link-1:before {
   content: none;
 }
-
 /* Footer Right */
-
 .footer-distributed .footer-right{
 	width: 20%;
 }
-
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -615,19 +609,9 @@ button:hover{
 	font-weight: normal;
 	margin: 0;
 }
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -635,14 +619,16 @@ button:hover{
 	cursor: pointer;
 	background-color:  #000;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #20b2aa;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
+	transition: .5s;
+}
+.footer-icons a:hover{
+	color: #fff;
 }
 @media (max-width: 880px) {
 
@@ -670,3 +656,7 @@ button:hover{
     width: 400px;
 }
 }
+
+/*********************************/
+/************* E N D ******************/
+/*********************************/
