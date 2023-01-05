@@ -6,11 +6,11 @@
 body{
     background-color: #000;
 }
-
-
-html{ scroll-behavior:smooth; }
+html{ 
+	scroll-behavior:smooth; 
+}
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
     background: #c0c0c0; 
@@ -22,7 +22,8 @@ html{ scroll-behavior:smooth; }
     background: #25b7ab; 
   }
 
-
+/**************** nav bar ***************/
+/***************************************/
 .container {
 	position: relative;
 	margin-top: 100px;
@@ -89,9 +90,11 @@ nav .links a.active{
 nav .icon-burger {
 	display: none;
 	position: absolute;
+	cursor: pointer;
 	right: 5%;
 	top: 50%;
 	transform: translateY(-50%);
+	background: #20b2aa;
 }
 nav .icon-burger .line {
 	width: 30px;
@@ -142,10 +145,10 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
-	/*************************
-	*************************/
 }
 /****************** End of navigation bar *************************/
+/**************************************************/
+/************************ Home Page **************************/
 .home{
     padding: 0 20px;
     background-color: #000;
@@ -174,26 +177,37 @@ nav .icon-burger .line {
 .color-green{
 	color: #20b2aa;
 }
+.cover-article{
+	width: 100%;
+	height: 20vh;
+	text-align: center;
+}
+.paragraph-content{
+	text-align: center;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#seagreen{
+	color: #1fb2aa;
+}
+.more-images{
+	width: 180px;
+}
 
-/*******************************************/
+/*****************WEATHER**************************/
 
-/*WEATHER
-/* --------------------background */
 .container-fluid{
  width: 420px;
  margin: 50px auto;
  padding: 80px 0;
 
 }
-
-
 .inputs {
     padding: 2rem 0 2rem 0;
     text-align: center;
     justify-content: center;
-
 }
-
 .inputs input[type="text"] {
     height: 3.5rem;
     width: 20rem;
@@ -218,7 +232,6 @@ nav .icon-burger .line {
     border: none;
     border-radius: 2px;
 }
-
 /* -------------------------------display */
 .display {
     text-align: center;
@@ -227,13 +240,10 @@ nav .icon-burger .line {
 }
 .wrapper {
     margin: 0 9rem;
-
     background-color: white;
-    /* height: 45vh; */
     margin: 50px auto;
     border-radius: 2px;
 }
-
 .wrapper h2{
     padding: 50px 0;
     text-align: center;
@@ -248,7 +258,6 @@ nav .icon-burger .line {
 	color: #04214c;
     font-size:23px;
   }
-
   .wrapper h2 span{
     font-size: 26px;
     color: #9beefb;
@@ -261,10 +270,8 @@ nav .icon-burger .line {
 /*******************************************/
 
 .bbody{
-/* height: 100px; */
 padding: 50px 0;
 }
-
 #search-form
 {
 display: flex;
@@ -272,12 +279,10 @@ justify-content: center;
 align-items: center;
 margin-top: 100px;
 }
-
 #temp
 {
 text-align: center;
 }
-
 #temp #temp-unit
 {
 font-size: 2rem;
@@ -287,7 +292,6 @@ color: #ffffff;
 {
 font-size: 1.5rem;
 color: #ffffff;
-
 }
 #climate
 {
@@ -301,20 +305,13 @@ font-size: 2.0rem;
 color: #ffffff;
 text-align: center;
 }
-
-
-
-
 #temp-icon
 {
 margin: 1rem;
 width: 40%;
 height: auto;
 }
-
-
 main{
-
 padding: 20px;
 margin-top: 10px;
 background-color: #6b778d68;
@@ -323,11 +320,7 @@ width: 360px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-/* box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2); */
-
 }
-
-
 #search-button
 {
 color: #fff;
@@ -342,16 +335,11 @@ display: inline-block;
 transition: all 0.4 ease 0s;
 }
 #search-button:hover{
-
 color: #ffffff;
 background: #ff6768;
 border-color: #ff6768;
 transition: all 0.4s ease 0s;
-
-
-
 }
-
 #search-input
 {
 width: 260px;
@@ -368,23 +356,11 @@ input
 {
 border: none;
 }
-
-
-
-
 /*******************************************/
 /*******************************************/
 
-														/*contact.html styling*/
-.contact{
-    background-color: #fff;
-}
-.contactUs{
-    background-image: url(https://mantrabi.com/wp-content/uploads/2019/07/ContactUs.jpg);
-    height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/***********contact page*************/
+
 input{
     padding: 10px;
     border-color:rgb(60, 60, 206) ;
@@ -404,7 +380,7 @@ textarea{
 	border-radius: 50%;
 }
 button{
-    background-color: rgba(0, 0, 255, 0.582);
+    background-color: #20b2aa;
     padding: 20px;
     color: #fff;
     border: none;
@@ -415,21 +391,16 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: white;
+    background-color: transparent;
     font-weight: bolder;
     transition: 0.5s;
+	color: #20b2aa;
 }
 .button:hover{
     color: rgba(0, 0, 255, 0.582);
 }
 .table{
     padding: 15px;
-}
-legend{
-    padding-bottom: 20px;
-    text-transform: capitalize;
-    font-size: 25px;
-    color: rgb(60, 60, 206);
 }
 .contacts-container{
     display: flex;
@@ -447,7 +418,7 @@ legend{
     padding: 20px;
 }
 .deets .fa{
-    background-color: #20b2ab80;
+    /* background-color: #20b2ab80; */
     color: #fff;
     background-size: cover;
     padding: 30px;
@@ -457,91 +428,131 @@ legend{
 .deets a{
     text-decoration: none;
     color: rgba(128, 128, 128, 0.952);
+	transition: .5s;
 }
 .deets a:hover{
-    color: rgba(0, 0, 255, 0.582);
+    color: #fff;
 }
 @media (max-width: 880px) {
 	.contacts-container{
 		display: inline-block;
 		align-items: center;
 		justify-content: space-evenly;
+		margin: 120px 50px;
+		padding: 10px auto;
+	}
+	.deets .fa{
+		color: #fff;
+		background-size: cover;
+		padding: 10px;
+		margin: 5px;
+	
+	}
+	.deets .fa, .deets p{
+		font-size: medium;
+		padding: 10px;
+	}
+	#Message{
+		width: 90%;
+	}
+	.tfields{
+		width: fit-content;
 	}
 
 }
 
 /*******************************************/
+/****************** About Page *************************/
+
+.table-details{
+	color: #fff; 
+	padding: 0 ; 
+	margin: 200px auto;
+}
+.table-details li{
+	list-style: none;
+}
+.table-details td{
+	padding: 0 15px;
+	margin: 20px;
+	text-transform: capitalize;
+}
+.green-color{
+	color: #20b2aa;
+	border-bottom: 2px solid #20b2ab41;
+}
+@media (max-width: 880px) {
+	.information-about-me{
+		margin: 20px;
+	}
+	.table-details{
+		color: #fff; 
+		padding: 0 ; 
+		margin: 200px auto;
+	}
+	.table-details td{
+		padding: 0 15px;
+		margin: 20px;
+	}
+	.myTable{
+		width: 25%;
+	}
+}
 /*******************************************/
 /*******************************************/
 /*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
-/*******************************************/
+/******************* footer ************************/
 .footer-distributed{
 	background: #000;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
 }
-
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
-
 /* Footer left */
-
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
 	margin: 0;
 }
-
 .footer-distributed h3 span{
-	color:  lightseagreen;
+	color:  #1fb2aa;
 }
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
-
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  font-weight:400;
+  	font-weight:400;
 	text-decoration: none;
 	color:  inherit;
+	transition: .5s;
 }
-
+.footer-links a:hover{
+	color: #1fb2aa;
+}
 .footer-distributed .footer-company-name{
 	color:  #222;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center{
 	width: 35%;
 }
-
 .footer-distributed .footer-center i{
 	background-color:  #000;
 	color: #20b2aa;
@@ -554,32 +565,27 @@ legend{
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
-
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
-  font-weight:400;
+  	font-weight:400;
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
-
 .footer-distributed .footer-center p a{
 	color:  #20b2aa;
 	text-decoration: none;;
 }
-
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight:300;
@@ -589,17 +595,13 @@ legend{
   display: inline-block;
   padding-right: 5px;
 }
-
 .footer-distributed .footer-links .link-1:before {
   content: none;
 }
-
 /* Footer Right */
-
 .footer-distributed .footer-right{
 	width: 20%;
 }
-
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -607,19 +609,9 @@ legend{
 	font-weight: normal;
 	margin: 0;
 }
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -627,14 +619,16 @@ legend{
 	cursor: pointer;
 	background-color:  #000;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #20b2aa;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
+	transition: .5s;
+}
+.footer-icons a:hover{
+	color: #fff;
 }
 @media (max-width: 880px) {
 
@@ -662,3 +656,7 @@ legend{
     width: 400px;
 }
 }
+
+/*********************************/
+/************* E N D ******************/
+/*********************************/
