@@ -154,7 +154,7 @@ nav .icon-burger .line {
     background-color: #000;
 }
 .landing-page-image{
-    width: 720px;
+    max-width: 940px;
     padding-top: 20px;
 }
 .intro{
